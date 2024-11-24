@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Build output
+build/
+dist/
+
+# Environment variables file
+.env
+
+# Mac system files
+.DS_Store
+
+# IDE configuration files (if applicable)
+.vscode/
+
+
+# Optional: add specific large files you don't want tracked
+*.mp4
+*.zip
+*.tar
+

@@ -1,0 +1,24 @@
+.breadcrump-box {
+  display: flex;
+  align-items: center;
+  padding: 21px 0px;
+  .bread-crump-item {
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      color: #797979;
+    }
+    .next-item {
+      color: #797979;
+      font-size: 17px;
+    }
+  }
+}
+.breadcrump {
+  padding: 6px 0px;
+  border-bottom: 0.5px solid $b-color;
+  a {
+    color: $yellow;
+    text-transform: capitalize;
+  }
+}

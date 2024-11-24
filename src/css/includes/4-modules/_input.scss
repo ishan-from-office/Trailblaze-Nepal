@@ -1,0 +1,172 @@
+input {
+  border: 0;
+  &:focus {
+    outline: 1px solid $yellow;
+  }
+}
+.suc-input {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px 20px !important;
+  width: 100%;
+  color: $gray;
+  font-size: 14px;
+  font-weight: 300;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+::placeholder {
+  color: #c9c9c9;
+  font-size: 14px;
+  font-weight: 300;
+}
+.foot-input {
+  margin-top: 10px;
+  border: 1px solid #fff !important;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 10px !important;
+  width: 100%;
+  color: #ffff !important;
+  &::placeholder {
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+input {
+  color: $text-color;
+  font-size: 15px;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 0px;
+  width: 100%;
+}
+.css-1s2u09g-control {
+  //   border: 0 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+.css-1okebmr-indicatorSeparator {
+  width: 0px !important;
+}
+.css-tj5bde-Svg {
+  color: $text-color;
+}
+.react-datepicker-popper[data-placement^='top']
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^='bottom']
+  .react-datepicker__triangle::before {
+  border-bottom-color: $yellow !important;
+}
+select {
+  -webkit-appearance: none;
+  font-size: 16px;
+  font-weight: 500;
+
+  &:focus {
+    border: 0;
+  }
+}
+.filter-down {
+  position: absolute;
+  font-size: 55px !important;
+  color: $yellow;
+  right: 0;
+  top: -2px;
+  color: $text-color;
+}
+.select-date {
+  border: 1px solid $b-color;
+  border-radius: 4px;
+  padding: 10px 8px !important;
+  width: 100%;
+  &::placeholder {
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: 400;
+    // padding: 0px 10px;
+  }
+}
+.textareax-box {
+  width: 100%;
+  border: 1px solid $b-color;
+  padding: 10px 8px !important;
+  border-radius: 4px;
+  ::placeholder {
+    color: red !important;
+  }
+}
+.style-input {
+  border: 1px solid $b-color;
+  width: 100%;
+  padding: 10px 7px !important;
+  border-radius: 4px;
+  &::placeholder {
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.month {
+  color: $yellow;
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
+.select-title {
+  width: 100%;
+  border: 1px solid $b-color;
+  border-radius: 4px;
+  padding: 10px 8px;
+  &:focus {
+    outline: 1px solid $yellow;
+  }
+  .select-title {
+    color: #4b4b4b;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.down-icon {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+#react-select-5-listbox {
+  top: 26px;
+  option {
+    color: red !important;
+  }
+}
+.css-2613qy-menu {
+  background-color: red;
+}
+.input-box {
+  position: relative;
+
+  label {
+    position: absolute;
+    background-color: $white;
+    top: 10px;
+    left: 10px;
+  }
+  .toggle-label {
+    background-color: #fff;
+    padding: 0px 8px;
+    top: -10px !important;
+    transition: all 0.2s linear;
+    input {
+      background-color: #ffff !important;
+    }
+  }
+  input {
+    label {
+      // background-color: red !important;
+    }
+  }
+}
+textarea::-webkit-input-placeholder {
+  color: #4b4b4b;
+  &:focus {
+    outline: 1px solid $yellow;
+  }
+}

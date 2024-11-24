@@ -1,0 +1,28 @@
+.search {
+  .price {
+    margin-top: 10px;
+    border: 1px dashed $yellow;
+    @include center;
+    padding: 8px 7px;
+    margin-left: 21px;
+    @include potrait {
+      margin-left: 0;
+    }
+    span {
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    p {
+      color: #4c4c4c;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  .img {
+    flex-basis: 35%;
+  }
+}
+.tour-empty {
+  @include center;
+}

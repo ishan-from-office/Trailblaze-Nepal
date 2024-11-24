@@ -1,0 +1,410 @@
+button {
+  outline: 0;
+  border: none;
+  @include tsn;
+}
+
+.search-trip {
+  background-color: $text-color;
+  border-radius: 6px;
+  width: 100%;
+  padding: 18px 10px;
+  @include mini {
+    padding: 9px 10px;
+    margin-top: 10px;
+  }
+  @include center;
+  &:hover {
+    background-color: $yellow;
+  }
+  p {
+    color: #ffff !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    letter-spacing: 3px;
+
+    @include mini {
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+  }
+}
+.rd-btn {
+  background-color: #efefefcc;
+  padding: 13px 22px;
+  border-radius: 5px;
+  @include tsn;
+  &:hover {
+    background-color: $yellow;
+    span {
+      color: #ffff !important;
+    }
+    .arrow {
+      color: #ffff;
+    }
+  }
+  @include mini {
+    padding: 11px 12px;
+  }
+  span {
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .arrow {
+    color: $yellow;
+  }
+}
+.top-btn {
+  background-color: $yellow;
+  position: absolute;
+  top: 6%;
+  right: 3%;
+  @include potrait {
+    right: 2% !important;
+    padding: 7px 10px !important;
+  }
+  color: #ffff;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  @include center;
+}
+.private {
+  background-color: #a38059 !important;
+}
+.feature-btn {
+  background-color: $yellow;
+  position: absolute;
+  top: 9%;
+  left: 4%;
+  color: #ffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.btn {
+  @include btn(10px 30px, $yellow, 6px, 16px, 500, #ffff);
+  &:hover {
+    @include hover-btn;
+  }
+}
+.c-btn {
+  @include btn(13px 30px, $yellow, 6px, 16px, 600, #fff);
+  .right-arr {
+    @include tsn;
+  }
+  &:hover {
+    @include hover-btn;
+    .right-arr {
+      transform: translateX(10px);
+    }
+  }
+}
+.btn-sus {
+  background-color: #023047;
+  padding: 16px 10px;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 500;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  @include tsn;
+  &:hover {
+    background-color: $yellow;
+  }
+}
+.btn-send {
+  @include btn(10px 20px, $yellow, 6px, 16px, 400, #fff);
+  .right-arr {
+    @include tsn;
+  }
+  &:hover {
+    @include hover-btn;
+    .right-arr {
+      transform: translateX(10px);
+    }
+  }
+}
+.accordion-button {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: transparent;
+  padding: 0px 0px !important;
+  @include potrait {
+    font-size: 16px !important;
+  }
+  .down {
+    font-size: 30px;
+  }
+  &::after {
+    width: 0 !important;
+  }
+}
+.accordion {
+  margin-top: 20px;
+}
+.accordion-item {
+  background-color: transparent !important;
+  border: 0 !important;
+  margin-bottom: 0px;
+}
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: transparent;
+  box-shadow: none;
+}
+.rotate {
+  transform: rotate(180deg);
+  font-size: 20px;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-body {
+  padding: 0 !important;
+}
+.view-btn {
+  border: 2px solid $yellow;
+  padding: 8px 14px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  transition: all 0.4s linear;
+  &:hover {
+    background-color: $yellow;
+    a {
+      color: #ffff !important;
+    }
+  }
+  a {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.breadcrump {
+  border-bottom: 1px solid #c5c5c5;
+}
+.pagination {
+  a {
+    border: 2px solid $yellow;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #313131;
+    &:hover {
+      background-color: $yellow;
+      color: #ffff;
+    }
+
+    margin: 5px;
+  }
+}
+.filter-by {
+  border: 1px solid #c5c5c5;
+  padding: 10px 8px;
+  border-radius: 4px;
+  position: relative;
+}
+select::-ms-expand {
+  display: none;
+}
+.selectcss {
+  position: S;
+  width: 200px;
+  border: 2px solid #c5c5c5;
+  padding: 10px 9px;
+}
+option {
+  font-size: 15px;
+  font-weight: 400;
+  color: $text-color;
+}
+.book-trip {
+  background-color: #fb8500;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 9px 53px;
+  border-radius: 80px;
+  color: #ffff;
+}
+.ask-btn {
+  margin-top: 20px;
+  border: 2px solid $yellow;
+  padding: 9px 68px;
+  background-color: #ffff !important;
+  border-radius: 80px;
+  color: $yellow;
+  font-size: 16px;
+  font-weight: 600;
+}
+.enquery {
+  border: 1px solid $yellow;
+  border-radius: 4px;
+  padding: 0px 8px;
+  background-color: #ffff;
+  padding: 4px 11px;
+  color: $text-color;
+  font-size: 13px;
+  font-weight: 400;
+}
+.nook-btn {
+  border-radius: 4px;
+  margin-left: 10px;
+  padding: 0px 8px;
+  background-color: $yellow;
+  padding: 4px 14px;
+  color: #ffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+.grp-btn {
+  background-color: $p;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  top: -4px;
+  left: 41%;
+  padding: 3px 16px;
+}
+.dis {
+  background-color: $yellow;
+  font-size: 7px;
+  font-weight: 500;
+  padding: 4px 6px;
+  border-radius: 7px;
+}
+.confirm-book-btn {
+  background-color: $yellow;
+  color: #ffff;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 13px 0px;
+  border-radius: 4px;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.vew-more {
+  @include btn(10px 20px, $yellow, 6px, 14px, 500, #ffff);
+  @include tsn;
+  .right-arr {
+    @include tsn;
+  }
+  &:hover {
+    @include hover-btn;
+    .right-arr {
+      transform: translateX(10px);
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-nav.disabled + .owl-dots {
+    margin-top: 20px;
+  }
+  .owl-stage-outer {
+    padding: 16px 12px;
+    @include mini {
+      padding: 16px 0px !important;
+    }
+  }
+  .owl-dots {
+    .active {
+      span {
+        background-color: $yellow !important;
+      }
+    }
+    span {
+      border: 1px solid $yellow;
+      height: 15px !important;
+      width: 15px !important;
+      background-color: transparent !important;
+      &:hover {
+        background-color: $yellow !important;
+      }
+    }
+  }
+}
+.modal-conten {
+  animation: rotate infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.add-btn {
+  background-color: $yellow;
+  padding: 3px 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 6px;
+}
+.hide-on-mb {
+  @include potrait {
+    display: none;
+  }
+}
+.hide-on-desktop {
+  display: none;
+  @include potrait {
+    margin-top: 6px;
+    display: block;
+  }
+}
+.banner-overlay {
+  background-color: red;
+}
+.contact-send {
+  background-color: $text-color;
+  color: $white;
+  padding: 15px 23px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-continue {
+  margin-top: 30px;
+  border: 1px solid $yellow;
+  border-radius: 16px;
+  padding: 6px 21px;
+  &:hover {
+    background-color: $yellow;
+    a {
+      color: $white;
+    }
+  }
+  background-color: transparent;
+  a {
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

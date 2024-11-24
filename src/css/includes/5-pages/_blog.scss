@@ -1,0 +1,22 @@
+.blog {
+  h1 {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .card {
+    .card-body {
+      h5 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+      }
+      p {
+        margin-top: 20px;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+  }
+}

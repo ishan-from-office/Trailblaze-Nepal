@@ -1,0 +1,259 @@
+.expedition {
+  display: flex;
+  @include desktop {
+    flex-direction: column !important;
+  }
+  .trip-box {
+    border-bottom: 1px solid $b-color;
+    h6 {
+      font-size: 17px;
+      font-weight: 500;
+    }
+  }
+  .mobile-flter {
+    display: none;
+    @include potrait {
+      display: block;
+    }
+  }
+  .filter-box {
+    .view-more {
+      a {
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+        color: #afafaf;
+      }
+    }
+    flex-basis: 20%;
+    margin-right: 28px;
+    @include potrait {
+      margin-right: 0 !important;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .triplist {
+    .price {
+      margin-top: 10px;
+      border: 1px dashed $yellow;
+      @include center;
+      padding: 8px 7px;
+      margin-left: 21px;
+      @include potrait {
+        margin-left: 0;
+      }
+      span {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 600;
+      }
+      p {
+        color: #4c4c4c;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .filter-icon {
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+    }
+    ul li {
+      margin-bottom: 3px;
+    }
+    .tour-event {
+      ul {
+        li {
+          font-size: 15px;
+          font-weight: 500;
+          color: #313131;
+        }
+      }
+    }
+    .tour-type {
+      ul {
+        li {
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+    .title-trip {
+      border-bottom: 1px solid $b-color;
+      @include potrait {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      color: #4c4c4c;
+    }
+    flex-basis: 80%;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      text-transform: capitalize;
+      @include potrait {
+        font-size: 20px;
+        margin-bottom: 10px !important;
+      }
+    }
+    h5 {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 7px;
+    }
+    .img-content {
+      margin-top: 10px;
+      @include mini {
+        margin-top: 0;
+      }
+      .tick {
+        font-size: 17px;
+        color: $yellow;
+      }
+      span {
+        color: #afafaf;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      p {
+        color: #313131;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+  .expedition-box {
+    .next-p {
+      p {
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: #4c4c4c;
+      text-transform: capitalize;
+    }
+  }
+}
+.select-box {
+  position: relative;
+  flex-basis: 20%;
+  @include mini {
+    flex-basis: 28%;
+  }
+  @include potrait {
+    width: 100%;
+  }
+}
+.filter-box {
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    @include potrait {
+      flex-direction: column !important;
+    }
+    @include desktop {
+      justify-content: space-between !important;
+      flex-direction: row;
+    }
+    .desktop-filter {
+      @include potrait {
+        display: none !important;
+      }
+    }
+    h6 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    border: 2px solid $b-color;
+    border-radius: 6px;
+  }
+  .spesifice-date {
+    border: 1px solid $b-color;
+    border-radius: 6px;
+    padding: 7px 7px;
+    .date {
+      color: #cccccc;
+    }
+    span {
+      color: #afafaf;
+      font-size: 14px;
+      font-family: 400;
+    }
+  }
+  .activities {
+    border-bottom: 0px !important;
+  }
+  .check-box {
+    padding: 17px 10px;
+    .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+      padding: 4px 0px !important;
+    }
+    border-bottom: 1.5px solid $b-color;
+    @include potrait {
+      border-bottom: 0;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  .filter-title {
+    padding-top: 22px;
+    h1 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+.pagination {
+  @include center;
+}
+.order-md {
+  order: 1;
+}
+.package {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $b-color;
+  @include mini {
+    flex-direction: column;
+  }
+
+  .img {
+    flex-basis: 56%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .view-detail {
+    margin-left: 10px;
+    flex-basis: 80%;
+    @include mini {
+      margin-left: 0;
+      margin-top: 20px;
+      align-self: stretch;
+    }
+  }
+}

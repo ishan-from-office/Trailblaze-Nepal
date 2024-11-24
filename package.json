@@ -1,0 +1,76 @@
+{
+  "name": "travelsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.0",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-sass": "^3.4.3",
+    "framer-motion": "^6.5.1",
+    "moment": "^2.29.4",
+    "owl.carousel": "^2.3.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
+    "react-fullscreen-image": "^0.0.3",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.3.0",
+    "react-image-lightbox": "^5.1.4",
+    "react-image-magnify": "^2.7.4",
+    "react-images": "^1.2.0-beta.7",
+    "react-intersection-observer": "^9.4.0",
+    "react-modal": "^3.15.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-paginate": "^8.1.3",
+    "react-photo-gallery": "^8.0.0",
+    "react-rating-stars-component": "^2.2.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.4.0",
+    "react-simple-image-viewer": "^1.2.2",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.8",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "screenfull-react": "^0.0.4",
+    "simple-react-lightbox": "^3.6.9-0",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

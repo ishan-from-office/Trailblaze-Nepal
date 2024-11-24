@@ -1,0 +1,89 @@
+.contact-banner {
+  position: relative;
+
+  .banner-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    @include center;
+    h1 {
+      color: $white;
+      font-weight: 600;
+      font-size: 44px;
+    }
+  }
+}
+.contact-1 {
+  .contact-1-inner {
+    h1 {
+      margin-top: 60px;
+      font-size: 34px;
+      font-weight: 600;
+      color: $text-color;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        background-color: $yellow;
+        width: 20%;
+        height: 2px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        background-color: $yellow;
+        width: 20%;
+        height: 2px;
+      }
+    }
+    h5 {
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: 500;
+      color: $text-color;
+    }
+    h6 {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      color: $text-color;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $color;
+    }
+    ul {
+      li {
+        margin-top: 8px;
+        span {
+          font-size: 15px;
+          font-weight: 600;
+          color: $text-color;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+  label {
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    span {
+      color: $yellow;
+    }
+  }
+  .contact-input {
+    padding-left: 10px;
+    width: 100%;
+    border: 1px solid $b-color;
+  }
+}

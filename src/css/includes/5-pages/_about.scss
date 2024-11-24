@@ -1,0 +1,149 @@
+.about-section {
+  span {
+    color: $yellow;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      content: '';
+      background-color: $yellow;
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      bottom: 8px;
+      left: -80px;
+    }
+  }
+}
+
+.about-banner {
+  position: relative;
+  .about-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      color: #ffff;
+      font-family: bold;
+      font-size: 26px;
+    }
+  }
+  .bottom-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+.about-1 {
+  .about-1-sub {
+  }
+}
+.about-2 {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  p {
+    color: $text-color;
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+.service-list {
+  .service-content {
+    h5 {
+      color: $text-color;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 7px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $color;
+      line-height: 22px;
+    }
+  }
+  .icon-box {
+    background-color: $yellow;
+    @include center;
+    padding: 19px;
+    color: $white;
+
+    .icon {
+      font-size: 40px;
+    }
+  }
+}
+.vedio-content {
+  height: 500px;
+}
+.about-3 {
+  .about-content-3 {
+    // @include center;
+    h1 {
+      font-size: 35px;
+      font-weight: 600;
+      color: $text-color;
+    }
+    p {
+      padding: 0px 164px;
+      color: $color;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}
+.about-4 {
+  .about-4-img {
+    position: relative;
+    @include center;
+  }
+  .about-4-content {
+    .about-4-content-2 {
+      padding: 10px 80px;
+    }
+    .about-4-content-1 {
+      padding: 10px 297px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 7px;
+    }
+    p {
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .about-4-box {
+      background-color: $yellow;
+      padding: 20px 23px;
+      //
+      .icon-about-4 {
+        font-size: 60px;
+      }
+      .about-icon-content {
+        border-left: 1px solid $white;
+        padding-left: 10px;
+      }
+      .about-4-icon {
+      }
+    }
+    h2 {
+      font-size: 45px;
+      font-weight: 600;
+    }
+    position: absolute;
+    padding: 40px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    // height: 100%;
+  }
+}

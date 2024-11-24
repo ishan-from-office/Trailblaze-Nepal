@@ -1,0 +1,77 @@
+@mixin tsn(
+  $property: all,
+  $time: 0.5s,
+  $easing: cubic-bezier(0.215, 0.61, 0.355, 1)
+) {
+  transition: $property $time $easing;
+}
+@function button($padding, $bg) {
+  @return $padding + px, $bg;
+}
+@mixin title {
+  font-size: 35px;
+  font-weight: 600;
+  word-spacing: 2px;
+  color: $text-color;
+}
+@mixin btn-css {
+  background-color: $yellow;
+  color: $text-color;
+  // border: 1px solid $text-color;
+  font-weight: 500;
+  font-size: 16px;
+}
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin btn-text {
+  color: #ffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+@mixin bordernone {
+  outline: 0;
+  border: 0;
+}
+@mixin hover-btn {
+  background-color: transparent;
+  border: 1px solid $yellow;
+  color: $yellow;
+
+  padding-right: 30px;
+}
+@mixin btn($td, $background, $radius, $size, $font-weight, $color) {
+  padding: $td;
+  background-color: $background;
+  border-radius: $radius;
+  font-size: $size;
+  font-weight: $font-weight;
+  color: $color;
+}
+@mixin potrait {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mini {
+  @media (max-width: 996px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1119px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 996px) {
+    @content;
+  }
+}

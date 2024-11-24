@@ -1,0 +1,709 @@
+.banner {
+  width: 100%;
+  .banner-img {
+    height: 400px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  @include mini {
+    height: 35vh !important;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  .banner-title {
+    h1 {
+      font-size: 48px;
+      @include potrait {
+        font-size: 26px !important;
+        top: 34% !important;
+        left: 7% !important;
+      }
+      @include mini {
+        font-size: 36px;
+        left: 201px;
+        top: 20%;
+      }
+      font-weight: 600;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+
+      @include center;
+    }
+  }
+  .trip {
+    #react-select-3-listbox {
+      top: 23px;
+    }
+    .css-2613qy-menu {
+    }
+    padding: 20px 15px;
+    position: absolute;
+    border-radius: 6px;
+    width: 84%;
+    @include potrait {
+      width: 100%;
+      bottom: -256px !important;
+      opacity: 1;
+      left: 0;
+      .gy-5 {
+        --bs-gutter-y: 0.5rem !important;
+      }
+    }
+    @include mini {
+      bottom: -51px;
+      right: 0px;
+      width: 100% !important;
+    }
+    @include desktop {
+      width: 90%;
+    }
+    bottom: -56px;
+
+    background-color: #ffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    p {
+      color: $gray;
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .left-icon {
+      color: #219ebc;
+      margin-right: 10px;
+    }
+    .seach-icon {
+      color: #ffff;
+      font-size: 29px;
+      font-weight: 700;
+      margin-right: 10px;
+      p {
+        color: #fff;
+      }
+      @include potrait {
+        margin-right: 4px !important;
+      }
+      @include mini {
+        margin-right: 2px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.slide {
+  .top-place-carsouel {
+    .owl-carousel {
+      .owl-stage-outer {
+      }
+    }
+  }
+  h1 {
+    @include title;
+    @include potrait {
+      font-size: 26px !important;
+    }
+  }
+  .img-box {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    border-radius: 10px;
+  }
+  .over-box {
+    background-color: rgba($p, 0.6);
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    @include center;
+    color: #ffff;
+    @include potrait {
+      height: 54px !important;
+    }
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.6s ease-in;
+  }
+}
+.service {
+  padding-top: 100px;
+  padding-bottom: 46px;
+  @include potrait {
+    padding-top: 315px !important;
+  }
+  background-color: #efefefcc;
+}
+.service-icon {
+  color: $yellow;
+  font-size: 40px !important;
+  margin-right: 13px;
+}
+.sell {
+  transform: rotate(85deg);
+}
+.plane {
+  transform: rotate(36deg);
+}
+.service-content {
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-color;
+  }
+}
+.top-place {
+  border-radius: 20px;
+  img {
+    height: 100% !important;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+    .over-box {
+      border-radius: 0;
+      transform: scale(1.1);
+    }
+  }
+  .img-box2 {
+    height: 50%;
+    background-color: green;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+    }
+
+    .over-box {
+      @include center;
+      color: #fff;
+
+      span {
+        font-size: 17px;
+        font-weight: 400;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
+      .time-icon {
+        color: #fff;
+        font-size: 25px;
+      }
+    }
+  }
+
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: px;
+
+  overflow: hidden;
+  .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include mini {
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 32px;
+      color: $text-color;
+      @include potrait {
+        font-size: 20px !important;
+      }
+      @include mini {
+        font-size: 22px;
+      }
+      font-weight: 600;
+    }
+  }
+  .box-cover {
+    position: relative;
+  }
+
+  .box {
+    position: absolute;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #a38059;
+    color: #ffff;
+    @include center;
+  }
+
+  img {
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+    @include potrait {
+      height: 287px;
+    }
+    @include mini {
+      height: 267px;
+    }
+    width: 100%;
+    transition: all 0.6s ease-in;
+  }
+}
+
+.feature {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 32px;
+  padding: 50px 0px;
+  .more-feature {
+    @include center;
+  }
+  h1 {
+    @include title;
+    @include potrait {
+      font-size: 26px !important;
+    }
+  }
+  .gy-5 {
+    --bs-gutter-y: 14rem !important;
+  }
+  .feature-content {
+    padding: 20px 10px;
+    background-color: #ffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    position: relative;
+    bottom: 46px;
+    left: 0;
+    width: 100%;
+    .tour-explor {
+      margin-top: 20px;
+      padding: 10px 7px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      .icon-text {
+        color: $gray;
+        font-size: 13px;
+        font-weight: 300px;
+      }
+      p {
+        font-weight: 300;
+        font-size: 13px;
+        color: $gray;
+      }
+      .icon {
+        color: #219ebc;
+      }
+      span {
+        color: #219ebc;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+    span {
+      font-size: 17px;
+      font-weight: 500;
+      color: #6e6e6e;
+    }
+    .cross {
+      margin: 20px 0px;
+      position: relative;
+      margin-left: 10px;
+      &::after {
+        content: "";
+        background-color: #6e6e6e;
+        height: 33px;
+        width: 1px;
+        position: absolute;
+        top: -3px;
+        transform: rotate(88deg);
+        left: 18px;
+      }
+    }
+
+    .tour-title {
+      padding: 12px 0px;
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+
+        color: #313041;
+      }
+    }
+    .star {
+      span {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  .feature-box {
+    position: relative;
+    .feature-img {
+      overflow: hidden;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    img {
+      transition: all 0.5s linear;
+      &:hover {
+        transform: scale(1.1);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    }
+  }
+}
+.box {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: #a38059;
+  color: #ffff;
+  @include center;
+}
+.box-cover {
+  position: relative;
+}
+.icon-top {
+  color: $yellow;
+  font-size: 30px;
+  position: relative;
+}
+
+.booking {
+  margin-top: 10px;
+  background-image: url("https://www.summitclimb.com/images/sliders/slider1588593625_summitclimb-expedition.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 9;
+  .book-btn {
+    @include potrait {
+      justify-content: start !important;
+    }
+  }
+  .booking-text {
+    font-weight: 100;
+  }
+  // @include potrait {
+  //   min-height: 67vh;
+  // }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .content {
+    overflow: hidden;
+    z-index: 11;
+    @include center;
+    @include potrait {
+      padding-top: 3px !important ;
+    }
+
+    .event-type {
+      margin: 0px 10px;
+      @include potrait {
+        margin-top: 10px;
+      }
+    }
+    .star {
+      span {
+        color: #ffff;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    .price {
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      border: 1px solid #ffff;
+      @include center;
+      @include potrait {
+        margin-right: 9px !important;
+        height: 25px;
+        width: 25px;
+      }
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 600;
+      @include potrait {
+        font-size: 27px !important;
+      }
+    }
+    h2 {
+      color: #fb8500;
+      font-size: 64px;
+      font-weight: 600;
+      @include potrait {
+        font-size: 40px;
+      }
+    }
+    .circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid #fb8500;
+      @include potrait {
+        height: 80px;
+        width: 80px;
+      }
+      @include center;
+      .hike-icon {
+        color: #ffff;
+        font-size: 50px;
+      }
+    }
+  }
+  .tour {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 100;
+    @include potrait {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .icon-tour {
+      font-size: 30px;
+      margin-right: 4px;
+    }
+    span {
+      opacity: 0.7;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+    p {
+      line-height: 20px;
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .d-price {
+    position: relative;
+
+    &::after {
+      content: "";
+      background-color: #fb8500;
+      height: 61px;
+      width: 2px;
+      position: absolute;
+      top: -18px;
+      transform: rotate(88deg);
+      left: 75px;
+    }
+  }
+}
+.company-detail {
+  padding: 50px 0px;
+  background-color: #f5f5f5;
+  .com-btn {
+    .ar-icon {
+      font-size: 30px;
+      margin-left: 10px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #313041 !important;
+    @include potrait {
+      font-size: 26px !important;
+      text-align: start;
+    }
+
+    span {
+      font-weight: 300 !important;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    word-spacing: 2px;
+    color: #313041;
+    margin-top: 30px;
+    line-height: 23px;
+    text-align: center;
+    @include potrait {
+      text-align: start;
+    }
+  }
+}
+.top-destination {
+  .img-box {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    &:hover {
+      img {
+        overflow: hidden;
+        transform: scale(1.1);
+      }
+    }
+    .top-dist-content {
+      background-color: red;
+      width: 100%;
+    }
+    .title-place {
+      position: absolute;
+      padding: 10px 20px;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.5));
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      color: #fff;
+      @include tsn;
+      h2 {
+        font-size: 36px;
+        font-weight: 600;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      @include tsn;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  h1 {
+    margin-bottom: 27px !important;
+    font-size: 36px;
+    font-weight: 700;
+    z-index: 666;
+    text-align: center;
+    color: #313041 !important;
+    span {
+      font-weight: 300 !important;
+    }
+  }
+}
+
+.slide-clint {
+  .clint-review-carsouel {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    // padding: 36px 12px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    .owl-stage-outer {
+    }
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #023047;
+    span {
+      font-weight: 300 !important;
+    }
+  }
+  .slick-dots {
+    bottom: 17px;
+  }
+  .slick-list {
+    box-sizing: initial;
+    padding: 40px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+  }
+  .slick-slide {
+    width: 390px !important;
+    @include potrait {
+      width: 338px !important;
+    }
+  }
+  .slick-track {
+    // border: 1px solid red;
+  }
+  .clint-box {
+    padding: 7px 9px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 17px;
+      color: #023047 !important;
+    }
+    p {
+      padding-top: 7px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 17px;
+
+      font-weight: 400;
+    }
+    .clint-img {
+      width: 26%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.suscribe {
+  margin-top: 30px;
+  background-color: #f5f5f5;
+  padding: 33px 0px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #023047;
+    line-height: 37px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #023047;
+  }
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

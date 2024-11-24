@@ -1,0 +1,480 @@
+.everest-container {
+  .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  display: flex;
+  @include mini {
+    flex-direction: column;
+  }
+  .everest-right {
+    .e-title {
+      .mid-span {
+        padding: 0px 1px !important;
+      }
+      @include potrait {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+      }
+    }
+    @include desktop {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    span {
+      color: $p;
+      font-size: 14px;
+      font-weight: 400;
+      @include potrait {
+        font-size: 13px;
+      }
+    }
+
+    .task-icon {
+      font-size: 20px;
+      @include potrait {
+        font-size: 22px;
+      }
+    }
+    .star-box {
+      .num-box {
+        background-color: $p;
+        @include center;
+        height: 19px;
+        width: 35px;
+        color: #ffff;
+        border-radius: 8px;
+        padding: 12px 22px;
+      }
+    }
+    flex-basis: 70%;
+    .everest-img {
+      height: 400px;
+      @include mini {
+        height: 300px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    .activity {
+      tr:first-child {
+        border-bottom: 1px solid #cfc5c5;
+      }
+      td {
+        border-right: 1px solid #cfc5c5;
+      }
+      td:last-child {
+        border-right: 0 !important;
+      }
+      table {
+        width: 100%;
+      }
+    }
+    .map-box {
+      @include center;
+    }
+
+    .activity-box {
+      padding: 21px 0px;
+      @include center;
+      h4 {
+        font-size: 16px;
+        @include potrait {
+          font-size: 14px;
+        }
+        font-weight: 600;
+        color: #4c4c4c;
+      }
+      h6 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #4c4c4c;
+        margin-top: 6px;
+        text-align: center;
+      }
+      .activity-icon {
+        color: $yellow;
+        font-size: 42px;
+        // margin-left: 14px;
+      }
+    }
+    .trip-review {
+      margin-top: 30px;
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .trip-content {
+      border: 1px solid #dbd3d3;
+      margin: 15px 0px;
+      padding: 10px 8px;
+      p {
+        font-size: 16px;
+        font-weight: 400px;
+        color: #4c4c4c;
+      }
+    }
+    .accordion-header {
+      border-bottom: 1px dashed #666666;
+    }
+    .accodian-border {
+      border-bottom: 0 !important;
+    }
+    .accordion-button {
+      color: $text-color !important;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .acodian-icon {
+      margin-left: 204px;
+      @include potrait {
+        margin: 0px !important;
+      }
+      @include desktop {
+        margin-left: 88px;
+      }
+      @include mini {
+        margin-left: 137px;
+      }
+    }
+    .accordion-item {
+      margin-bottom: 29px;
+    }
+    .accordion-body {
+      border-bottom: 1px dashed #666666;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .tab-pane {
+      //   border: 1px solid #dbd3d3;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+      padding: 20px 18px;
+      border-radius: 4px;
+      p {
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    .nav-tabs {
+      border-bottom: 0 !important;
+      .nav-link {
+        font-size: 16px;
+        font-weight: 600;
+        color: #4c4c4c;
+        border: 0 !important;
+        &:hover {
+          border-color: none !important;
+        }
+      }
+
+      .active {
+        background-color: $yellow;
+        color: #fff;
+      }
+    }
+    .cost {
+      .cross {
+        color: #d23504;
+        margin-right: 6px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+      }
+
+      ul {
+        margin-top: 20px;
+        li {
+          margin-bottom: 10px;
+          .check {
+            color: $yellow;
+            margin-right: 6px;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            color: $text-color;
+          }
+        }
+      }
+    }
+    .join-trip {
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+      }
+      .table {
+        border-collapse: separate;
+        display: block;
+        thead {
+          @include potrait {
+            display: none;
+          }
+        }
+        td {
+          padding: 15px 0px;
+          @include potrait {
+            display: block;
+          }
+          &::before {
+            content: "";
+            color: #aaaaaa;
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+          }
+          &:first-child::before {
+            content: "DEPARTURE DATE";
+            display: none;
+            @include potrait {
+              display: block;
+            }
+          }
+          &:nth-child(2)::before {
+            content: "PRICE";
+            display: none;
+            @include potrait {
+              display: block;
+            }
+          }
+          &:nth-child(3)::before {
+            content: "TRIP STATUS";
+            display: none;
+            @include potrait {
+              display: block;
+            }
+          }
+          &:last-child {
+            width: 29%;
+            @include mini {
+              width: 33%;
+            }
+            @include potrait {
+              display: flex;
+              width: 100%;
+            }
+          }
+        }
+        th {
+          color: #aaaaaa;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        h6 {
+          color: $text-color;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          color: $text-color;
+          font-size: 16px;
+          font-weight: 300;
+        }
+        span {
+          color: $text-color;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .cut {
+          font-weight: 400 !important;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: 21px;
+            background-color: #023047;
+            width: 1px;
+            height: 30px;
+            transform: rotate(85deg);
+          }
+        }
+        .status {
+          p {
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .review {
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+      }
+      h6 {
+        font-size: 16px;
+        font-weight: 600;
+        color: $text-color;
+        margin-bottom: 0 !important;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 300;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $text-color;
+      }
+      .review-content {
+        padding: 10px 0px;
+        border-top: 1px solid #e1e1e1;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+    .gallery {
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+        margin-bottom: 10px !important;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .everest-left {
+    margin-left: 15px;
+    position: relative;
+
+    @include mini {
+      margin-left: 0;
+    }
+
+    flex-basis: 30%;
+
+    .fix-right {
+      position: fixed;
+      top: 65px;
+      width: 300px;
+      // z-index: 8888;
+    }
+
+    .mid-container {
+      @include tsn;
+      padding: 10px 20px;
+      border: 0.25px solid $b-color;
+      border-top: transparent;
+      border-bottom: transparent;
+      .offer {
+        span {
+          color: $text-color;
+          font-weight: 600;
+          font-size: 15px;
+        }
+      }
+      .price-person {
+        margin-bottom: 10px;
+        position: relative;
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          color: $text-color;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: 48px;
+          width: 61%;
+          border-top: 1px dashed $text-color;
+          @include mini {
+            width: 80%;
+          }
+          @include potrait {
+            width: 60% !important;
+          }
+        }
+      }
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    .bottom-container {
+      background-color: #f5f5f5;
+      border: 2px solid $b-color;
+      border-top: transparent !important;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 28px 10px;
+      @include center;
+      .ex {
+        background-color: #26abe2;
+        padding: 2px 16px;
+        border-radius: 15px;
+        @include center;
+        p {
+          color: #ffff;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+    .left-top {
+      position: relative;
+      background-color: #f5f5f5;
+      border: 2px solid $b-color;
+      border-bottom: transparent !important;
+
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 30px 18px;
+      @include center;
+      h6 {
+        font-size: 18px;
+        color: $text-color;
+        font-weight: 700;
+        span {
+          font-weight: 400 !important;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #fb8500;
+            transform: rotate(93deg);
+            top: -17px;
+            left: 93px;
+            width: 2px;
+            height: 60px;
+          }
+        }
+      }
+      h3 {
+        color: $yellow;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+.fix-right-box {
+  position: fixed;
+  top: 50px;
+  right: 150px;
+}
+.ind-img-box {
+  height: 300px;
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

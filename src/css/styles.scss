@@ -1,0 +1,13 @@
+// Responsive Media Queries
+@import 'include-media';
+
+// fonts
+@import 'fonts';
+
+// Include all the other stylesheets
+
+@import './includes/1-variables/variables';
+@import './includes/2-settings/settings';
+@import './includes/3-mixins/mixins';
+@import './includes/4-modules/modules';
+@import './includes/5-pages/pages';
